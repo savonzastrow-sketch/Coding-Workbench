@@ -27,7 +27,7 @@ st.markdown("""
 lessons = [
     {
         "title": "🏷️ Variables",
-        "code": "result = f'Hello {user_input}!'",
+        "code": "result = f'Hi {user_input}!'",
         "logic_id": "vars"
     },
     {
@@ -57,7 +57,7 @@ for i, tab in enumerate(tab_list):
             try:
                 # Logic execution based on the logic_id
                 if lesson['logic_id'] == "vars":
-                    output = f"Hello {user_val}!"
+                    output = f"Hi {user_val}!"
                 elif lesson['logic_id'] == "math":
                     output = float(user_val) * 10
                 
