@@ -32,7 +32,7 @@ lessons = [
     },
     {
         "title": "🔢 Math",
-        "code": "result = float(user_input) * 10",
+        "code": "output = f"In Farenheit that is {9/5*float(user_val)+32}",
         "logic_id": "math"
     }
 ]
