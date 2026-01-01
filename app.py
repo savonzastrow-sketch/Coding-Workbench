@@ -20,7 +20,7 @@ categories = [
         "logic_id": "strings",
         "content": [
             {"title": "🏷️ Basic Greeting", "description": "This code demonstrates a simple text string", "label": "Enter your name:", "code": "output = f'Hi {x}!'"},
-            {"title": "🔠 Uppercase", "label": "Enter text:", "code": "output = x.upper()"}
+            {"title": "🔠 Uppercase", "description": "This code converts text to upper case", "label": "Enter text:", "code": "output = x.upper()"}
         ]
     },
     {
@@ -28,7 +28,7 @@ categories = [
         "logic_id": "math_cat",
         "content": [
             {"title": "🌡️ Celsius to F", "description": "This code converts an entered Celsius value to Fahrenheit.", "label": "Enter Celsius:", "code": "output = f'{9/5 * float(x) + 32} °F'"},
-            {"title": "🧪 Eval Lab", "label": "Enter expression:", "code": "output = eval(x)"}
+            {"title": "🧪 Eval Lab", "description": "This code runs simple python funtios", "label": "Enter expression:", "code": "output = eval(x)"}
         ]
     }
 ]
