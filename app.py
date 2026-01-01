@@ -32,7 +32,7 @@ lessons = [
     },
     {
         "title": "🔢 Math",
-        "code": "result = float(user_input) * 10",
+        "code": "result = f'In Farenheit that is {9/5*float(user_val)+32}'",
         "logic_id": "math"
     }
 ]
@@ -49,7 +49,7 @@ for i, tab in enumerate(tab_list):
         
         # 1. INPUT SECTION
         st.subheader("📥 Input")
-        user_val = st.text_input("Enter test data:", key=f"in_{lesson['logic_id']}")
+        user_val = st.text_input("Enter temperature in celcius:", key=f"in_{lesson['logic_id']}")
         
         # 2. OUTPUT SECTION
         st.subheader("📤 Output")
@@ -59,7 +59,7 @@ for i, tab in enumerate(tab_list):
                 if lesson['logic_id'] == "vars":
                     output = f"Hi {user_val}!"
                 elif lesson['logic_id'] == "math":
-                    output = float(user_val) * 10
+                    output = f"In Farenheit that is {9/5*float(user_val)+32}"
                 
                 st.success(f"**Result:** {output}")
             except Exception as e:
