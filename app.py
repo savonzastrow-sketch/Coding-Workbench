@@ -19,9 +19,9 @@ st.markdown("""
 lessons = [
     {
         "title": "🏷️ Variables",
-        "code": "output = f'Hi {x}!'",
         "logic_id": "vars",
-        "label": "Enter your name:"
+        "label": "Enter your name:",
+        "code": "output = f'Hi {x}!'"
     },
     {
         "title": "🔢 Math",
