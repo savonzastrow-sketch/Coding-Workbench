@@ -27,7 +27,7 @@ categories = [
         "category_name": "🔢 Math",
         "logic_id": "math_cat",
         "content": [
-            {"title": "🌡️ Celsius to F", "label": "Enter Celsius:", "code": "output = f'{9/5 * float(x) + 32} °F'"},
+            {"title": "🌡️ Celsius to F", "description": "This code converts an entered Celsius value to Fahrenheit.", "label": "Enter Celsius:", "code": "output = f'{9/5 * float(x) + 32} °F'"},
             {"title": "🧪 Eval Lab", "label": "Enter expression:", "code": "output = eval(x)"}
         ]
     }
@@ -45,7 +45,12 @@ for i, tab in enumerate(tab_list):
         selected_title = st.selectbox("Choose a lesson:", lesson_titles, key=f"sel_{category['logic_id']}")
         
         lesson = next(item for item in category["content"] if item["title"] == selected_title)
+
+        # 1. DESCRIPTION SECTION
+        if "description" in lesson:
+            st.info(lesson["description"])
         
+        # 2. INPUT SECTION
         user_val = st.text_input(lesson['label'], key=f"in_{category['logic_id']}_{selected_title}")
         
         if user_val:
