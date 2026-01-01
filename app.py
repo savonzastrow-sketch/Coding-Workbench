@@ -19,7 +19,7 @@ categories = [
         "category_name": "📝 Strings",
         "logic_id": "strings",
         "content": [
-            {"title": "🏷️ Basic Greeting", "label": "Enter your name:", "code": "output = f'Hi {x}!'"},
+            {"title": "🏷️ Basic Greeting", "description": "This code demonstrates a simple text string", "label": "Enter your name:", "code": "output = f'Hi {x}!'"},
             {"title": "🔠 Uppercase", "label": "Enter text:", "code": "output = x.upper()"}
         ]
     },
