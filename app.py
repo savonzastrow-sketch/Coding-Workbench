@@ -29,7 +29,7 @@ categories = [
         "content": [
             {"title": "🌡️ Celsius to F", "description": "This code converts an entered Celsius value to Fahrenheit.", "label": "Enter Celsius:", "code": "output = f'{9/5 * float(x) + 32} °F'"},
             {"title": "🧪 Eval Lab", "description": "This code runs simple python funtios", "label": "Enter expression:", "code": "output = eval(x)"},
-            {"title": "2️⃣ x^2", "description": "This code calculates the square of a value", "label": "Enter a value:", "code": "output = f'{The square of {x} is float(x) * float(x)}.'"}
+            {"title": "2️⃣ x^2", "description": "This code calculates the square of a value", "label": "Enter a value:", "code": "output = f'The square of {x} is {float(x) * float(x)}.'"}
         ]
     }
 ]
